@@ -1,0 +1,907 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Joshfin+Sans:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <title>Website Design</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+      @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      .main {
+        max-width: 100%;
+        height: 500vh;
+        background-color: rgb(32, 37, 40);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .navbar {
+        width: 1580px;
+        height: 155px;
+        margin: auto;
+        background-color: #fff;
+      }
+      .icon {
+        width: 200px;
+        float: left;
+        height: 20%;
+        margin-top: -20px;
+        position: absolute;
+        border-radius: 10px solid black;
+      }
+
+      .logo {
+        color: aliceblue;
+        font-size: 35px;
+        font-family: Arial;
+        float: left;
+        padding-top: 30px;
+        margin-left: 100px;
+      }
+
+      .menu {
+        width: 100px;
+        float: left;
+        height: 70px;
+      }
+
+      .menu ul {
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 600px;
+        text-decoration: solid;
+      }
+
+      .menu ul li {
+        list-style: none;
+        margin-left: 92px;
+        margin-top: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+      }
+
+      .menu ul li a {
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        transition: 0.4s ease-in-out;
+      }
+      .menu ul li a:hover{
+        color: #c0c0c0;
+      }
+
+      /*
+        .search{
+            width: 700px;
+            margin-left: 100%;
+            margin-top: 80px;
+        }
+
+        .srch{
+            font-family:'Times New Roman', Times, serif;
+            width: 220px;
+            height: 40px;
+            background:transparent;
+            border: 1px solid white;
+            color: white;
+            border-right: none;
+            font-size: 30px;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            padding-left: none;
+            margin-left: 50px;
+            margin-right: none;
+            margin-top: 10px;
+        }
+
+        .btn{
+            width: 100px;
+            height: 30px;
+            background: aqua;
+            border: 2px solid aqua;
+            color: #fff;
+            font-size: 15px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .btn:focus{
+            outline: none;
+        }
+
+        .srch:focus{
+            outline: none;
+        }
+        */
+      .content {
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        color: #fff;
+        position: relative;
+        font-family: Arial;
+        font-size: x-large;
+      }
+
+      .content li {
+        margin-top: 150px;
+        color: #ff7200;
+        margin-left: 120px;
+      }
+
+      .content h1 {
+        margin-top: 30px;
+        font-family: "Arial";
+        font-size: 50px;
+        padding-left: 120px;
+        margin-top: 2%;
+        letter-spacing: 2px;
+        color: darkgrey;
+      }
+
+      .content .par {
+        padding-left: 120px;
+        padding-bottom: 25px;
+        font-family: Arial;
+        letter-spacing: 1.2px;
+        line-height: 30px;
+      }
+
+      .content .cn {
+        width: 160px;
+        height: 40px;
+        background: #ff7200;
+        border: none;
+        margin-bottom: 30px;
+        margin-left: 120px;
+        font-size: 22px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.4s all;
+      }
+
+      .content .cn a {
+        text-decoration: none;
+        color: #c0c0c0;
+        transition: 0.3s ease;
+      }
+
+      .cn:hover {
+        background-color: #fff;
+      }
+      .form {
+        width: 400px;
+        height: 480px;
+        background: linear-gradient(
+          to top,
+          rgba(212, 125, 141, 0) 50%,
+          rgba(212, 125, 141, 0) 50%
+        );
+        position: absolute;
+        top: 20px;
+        left: 770px;
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+        font-size: 25.8px;
+      }
+      .form input {
+        height: 35px;
+        width: 250px;
+        font-family: Arial;
+        font-size: 20px;
+      }
+      .in input {
+        height: 30px;
+        width: 90px;
+        font-size: 90%;
+        background: #ff7200;
+        border: none;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.4s all;
+      }
+      .icons {
+        height: 50px;
+        width: 50px;
+      }
+      button {
+        padding: 10px;
+        background-color: dodgerblue;
+        color: #fff;
+        border: none;
+        border-radius: 15px;
+      }
+      .icon-box {
+        margin: 30px 0px 0px 100px;
+        max-height: 20px;
+        max-width: 16%;
+        display: flex;
+        justify-content: center;
+      }
+      .icon-box p {
+        width: 300px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: inline-block;
+        margin: 0px 0px 0px 50px;
+      }
+      .row {
+        margin-left: 180px;
+      }
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-left: -10px;
+      }
+      .column {
+        display: flex;
+        color: #fff;
+      }
+      .column h2 {
+        font-weight: bold;
+        color: khaki;
+      }
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .more {
+        text-align: center !important;
+        margin:0px 0px 0px -20px; /* top right bottom left */
+      }
+      .col {
+        display: flex;
+        width: 80%;
+        height: 50%;
+      }
+      .client-wrap {
+        position: absolute;
+      }
+      .client-wrap h1 {
+        color: #fff;
+        margin: 550px 0px 0px 600px;
+      }
+      .client-in {
+        margin: 50px 0px 0px 200px;
+        width: 70%;
+        width: 80%;
+      }
+      .client-in img {
+        margin-left: 50px;
+        background-color: khaki;
+        float: left;
+      }
+      .flex-container {
+        color: white;
+        margin: 0px 0px 0px 50px;
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 50px 0px 0px 0px;
+        background:linear-gradient(purple,red);
+      }
+      .flex-box{
+        width: 250px;
+        height: 200px;
+        color: #fff;
+        font-size: 15px;
+        text-align: start;
+        line-height: 1.8;
+        border-radius: 20px;
+        margin: 20px 0px 0px 200px;
+      }
+      .one{
+        display:inline-block;
+        position: relative;
+        width: 20%;
+        height:150px;
+        background-color: lightgrey;
+        margin-left: 100px;
+        margin-top: 80px;
+      }
+      .footer {
+        background-color: black;
+        color: white;
+        margin-left:-450px;
+        margin-top: -500px;
+        height: 100%;
+      }
+      .snip1533 {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        color: #9e9e9e;
+        display: inline-block;
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 16px;
+        margin: 35px 10px 10px;
+        max-width: 310px;
+        min-width: 250px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border-top: 5px solid #d2652d;
+      }
+
+      .snip1533 *,
+      .snip1533 *:before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.1s ease-out;
+        transition: all 0.1s ease-out;
+      }
+
+      .snip1533 figcaption {
+        padding: 13% 10% 12%;
+      }
+
+      .snip1533 figcaption:before {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        color: #d2652d;
+        content: "\f10e";
+        font-family: 'FontAwesome';
+        font-size: 32px;
+        font-style: normal;
+        left: 50%;
+        line-height: 60px;
+        position: absolute;
+        top: -30px;
+        width: 60px;
+      }
+
+      .snip1533 h3 {
+        color: #3c3c3c;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        margin: 10px 0 5px;
+      }
+
+      .snip1533 h4 {
+        font-weight: 400;
+        margin: 0;
+        opacity: 0.5;
+      }
+
+      .snip1533 blockquote {
+        font-style: italic;
+        font-weight: 300;
+        margin: 0 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main">
+      <div class="navbar">
+        <div class="icon">
+          <a href="{% url 'crmhome' %}"><img class="logo" src="{% static 'media/V-CUBE-Logo.jpg' %}" alt="" /></a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="{% url 'crmhome' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'course' %}">Courses</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+          </ul>
+          <!--
+                    <div class="search">
+                        <input type="search" class="srch" name="" placeholder="Type to Text">
+                        <a href=""> <button class="btn">Search</button></a>
+                    </div>
+                -->
+        </div>
+      </div>
+      <div class="content">
+        <li>V CUBE SOFTWARE SOLUTIONS PVT.LTD</li>
+        <h1>
+          Learn Best <br />
+          Courses In our <br />
+          Training Academy <br />
+          for Your IT Career
+        </h1>
+        <p class="par" style="color: #fff">
+          V CUBE SOFTWARE SOLUTIONS PVT.LTD is one of <br />
+          the Best software Training institutes, Can Assist <br />
+          you to Reach Your Goal with IT Courses.
+        </p>
+        <button class="cn">
+          <a href="{% url 'course' %}"> Start Course </a>
+        </button>
+        <div class="form">
+          <h2>Enroll Here</h2>
+          <br />
+          <form action="{% url 'crmhome' %}" method="post">
+            {% csrf_token %}
+            {{ data.Name.label }} &emsp;&emsp; {{ data.Name}}<br /><br />
+            {{ data.email.label }} &emsp;&emsp; {{ data.email }} <br /><br />
+            {{ data.Mobile.label }} &emsp;&emsp;{{ data.Mobile }} <br /><br />
+            {{ data.gender.label }}&emsp;&emsp;&emsp;&emsp;{{ data.gender }}<br /><br />
+            {{ data.course.label }}&emsp;&emsp;&emsp;{{ data.course }}<br /><br />
+            <button type="Submit" style="cursor: pointer">Submit</button>
+          </form>
+        </div>
+        <div class="icon-box">
+          <div class="sticky" style="margin-left: 900px">
+            <i
+              class="fa-regular fa-clipboard fa-2xl"
+              style="color: rgb(195, 68, 68)"
+            ></i>
+            <p style="margin-bottom: -10px; font-weight: 800">
+              Class room Training
+            </p>
+          </div>
+          <div class="person" style="margin-left: 50px">
+            <i
+              class="fa-solid fa-user fa-2xl"
+              style="color: rgb(195, 68, 68)"
+            ></i>
+            <p style="font-weight: 800">Corporate Training</p>
+          </div>
+          <div class="online">
+            <i
+              class="fa-solid fa-laptop fa-2xl"
+              style="color: rgb(195, 68, 68)"
+            ></i>
+            <p style="font-weight: 800">Onilne Training</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="course"
+        style="color: #fff; font-family: Arial; font-weight: 800"
+      >
+        <h1 style="margin: 100px 0px 0px 650px">Our Courses</h1>
+        <br />
+      </div>
+      <div class="row">
+        <div class="column">
+          <a href="#"
+            ><img
+              src="https://static.thenounproject.com/png/2606577-200.png"
+              alt="devops"
+              style="
+                width: 50%;
+                height: 50%;
+                margin-left: 190px;
+                background-color: #2e2252;
+              "
+          /></a>
+          <p
+            style="
+              margin: 110px 0px 0px -200px;
+              color: #fff;
+              font-weight: 800;
+              font-size: 30px;
+            "
+          >
+            Devops
+          </p>
+        </div>
+        <div class="column">
+          <a href="#">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2801/2801091.png"
+              alt="data science"
+              style="width: 200%; height: 100px; background-color: yellow"
+            />
+          </a>
+          <p style="color: #fff; font-size: 30px; margin: 110px 0px 0px -100px">
+            <b> Data science</b>
+          </p>
+        </div>
+        <div class="column">
+          <a href="#"
+            ><img
+              src="https://cdn0.iconfinder.com/data/icons/social-media-logo-4/32/Social_Media_power_bi-512.png"
+              alt="powerbi"
+              style="
+                width: 55%;
+                height: 60%;
+                margin-left: -180px;
+                background-color: #2e2252;
+              "
+          /></a>
+          <p
+            style="
+              color: #fff;
+              font-weight: 800;
+              font-size: 30px;
+              margin: 110px 0px 0px -510px;
+            "
+          >
+            <b> Power Bi</b>
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <a href="#"
+          ><img
+            src="https://static.thenounproject.com/png/1375869-200.png"
+            alt="python"
+            style="
+              width: 35%;
+              height: 60%;
+              margin-left: 366px;
+              background-color: yellow;
+            "
+        /></a>
+        <p
+          style="
+            color: #fff;
+            font-weight: 800;
+            font-size: 30px;
+            margin: 130px 0px 0px -200px;
+          "
+        >
+          <b> Python</b>
+        </p>
+      </div>
+      <div class="column">
+        <a href="#">
+          <img
+            src="https://cdn.iconscout.com/icon/premium/png-256-thumb/full-stack-developer-5940156-4989577.png"
+            alt="powerbi"
+            style="
+              width: 55%;
+              height: 60%;
+              margin-left: 120px;
+              background-color: #2e2252;
+            "/>
+          </a>
+        <p
+          style="
+            color: #fff;
+            font-weight: 800;
+            font-size: 30px;
+            margin: 130px 0px 0px -260px;
+          "
+        >
+          <b> Python Full Stack</b>
+        </p>
+      </div>
+      <div class="column">
+        <a href="#"
+          ><img
+            src="https://thenounproject.com/api/private/icons/4213592/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0"
+            alt="powerbi"
+            style="
+              width: 223px;
+              height: 50%;
+              margin: 0px 0px 0px -120px;
+              background-color: yellow;
+            "
+          />
+        </a>
+        <p
+          style="
+            color: #fff;
+            font-weight: 800;
+            font-size: 30px;
+            min-width: 50%;
+            margin: 130px 50px 0px -230px;">
+          <b> Java Full Stack</b>
+        </p>
+      </div>
+      <div class="more" style="width: 100%;">
+        <button type="button" class="btn btn-primary btn-lg">
+          <a href="{% url 'course' %}" style="text-decoration: none;">For More Information</a>
+        </button>
+      </div>
+      <div class="head">
+        <h1 style="color: #ff7200; margin-left: 420px; margin-top: 50px">
+          The V CUBE Software Solutions Pvt.Ltd Advantages
+        </h1>
+      </div>
+      <div class="col">
+        <div class="calendar" style="margin-left: 400px; margin-top: 50px">
+          <i class="fa-solid fa-calendar fa-2xl" style="color:blue; height:10px; width:20px;"></i>
+          <h2 style="color: #fff; margin-top: 30px; margin-left: -120px; width:200%;">
+            In-Time Course Completion
+          </h2>
+          <p
+            style="
+              color: #fff;
+              margin-left: -120px;
+              font-size: 150%;
+              margin-top: 20px;
+              width:200%;
+            "
+          >
+            Committed to pure professionalism we make sure that the course
+            program gets completed the scheduled time. Equal priority will be
+            given for both theoretical & practical sessions​
+          </p>
+        </div>
+        <div class="laptop" style="margin-left: 400px; margin-top: 50px">
+          <i class="fa-solid fa-laptop fa-2xl" style="color: blue;"></i>
+          <h2 style="color: #fff; margin-top: 20px; margin-left: -120px">
+            Free Demo Sessions
+          </h2>
+          <p
+            style="
+              color: #fff;
+              margin-left: -160px;
+              font-size: 150%;
+              margin-top: 20px;
+            "
+          >
+            Free Demo Sessions (Online/Offline) by our qualified domain experts
+            will help the aspirants to get a better idea about the course
+            program & can get their doubts clarified by the experts
+          </p>
+        </div>
+      </div>
+      <div class="col" style="margin-top: -1600px">
+        <div class="briefcase" style="margin-left: 400px; margin-top:50px;">
+          <i
+            class="fa-sharp fa-solid fa-briefcase fa-2xl"
+            style="color: blue; margin-top: -100px;"
+          ></i>
+          <h2 style="color: #fff; margin-top: 10px; margin-left: -120px; width:400%;">
+            State-Of-The-Art Infrastructure
+          </h2>
+          <p
+            style="
+              color: #fff;
+              margin-left: -120px;
+              font-size: 150%;
+              margin-top: 20px;
+              width: 200%;
+            "
+          >
+            Get ready to witness an ultimate learning experience with our
+            state-of-the-art-infrastructure which includes digitalized
+            classrooms, sophisticated lab & other features​
+          </p>
+        </div>
+        <div class="blender" style="margin-left: 400px; margin-top: 50px; width:200%;">
+          <i class="fa-solid fa-blender fa-2xl" style="color: blue;"></i>
+          <h2 style="color: #fff; margin-top: 30px; margin-left: -120px">
+            Blended Training Approach
+          </h2>
+          <p
+            style="
+              color: #fff;
+              margin-left: -160px;
+              font-size: 150%;
+              margin-top: 20px;
+            "
+          >
+            Exposure towards real-time industry training by our trusted
+            experienced trainers will help you become a complete dominant
+            professional in your desired profession.
+          </p>
+        </div>
+        <div class="client-wrap">
+          <h1>Our Collaboration</h1>
+          <div class="client-in">
+            <ul style="list-style-type: none;" >
+              <li>
+                <img
+                  style="height:10%; width:13%;"
+                  src="https://www.vcubesoftsolutions.com/wp-content/uploads/2021/11/Accenture-logo-1-removebg-preview.png"
+                  alt=""
+                />
+                <img
+                  style="height:10%; width:13%;"
+                  src="https://www.vcubesoftsolutions.com/wp-content/uploads/2021/11/5b01f94486c82bb7d2c72d29fe63d4e9-removebg-preview.png"
+                  alt=""
+                />
+                <img
+                  style="height: 10%; margin-bottom: 20px; width:10%;"
+                  src="https://www.vcubesoftsolutions.com/wp-content/uploads/2021/11/HCL-Logo-removebg-preview.png"
+                  alt=""
+                />
+                <img
+                  style="height: 10%; width:10%;"
+                  src="https://www.vcubesoftsolutions.com/wp-content/uploads/2021/11/https___i.forbesimg.com_media_lists_companies_liquidhub_416x416-removebg-preview.png"
+                  alt=""
+                />
+                <img
+                  style="height:10%; width:10%;"
+                  src="https://www.vcubesoftsolutions.com/wp-content/uploads/2021/11/download__1_-removebg-preview.png"
+                  alt=""
+                />
+                <img
+                  style="height:10%; width:10%;"
+                  src="https://www.vcubesoftsolutions.com/wp-content/uploads/2021/11/b62d6e4884b972479f1fde4396cb768f-removebg-preview.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="we_do">
+            <h1 style="margin: 300px 0px 0px 200px; position: relative">
+              What we do
+            </h1>
+            <p
+              style="
+                margin: 50px 0px 0px 200px;
+                color: #fff;
+                display: flex;
+                position: absolute;
+                width: 30%;
+                font-weight: 800;
+                font-family: Arial;
+              "
+            >
+              V CUBE Software Solutions Pvt.Ltd offers you the greatest
+              available services which are described below
+            </p>
+            <img
+              style="float: right; width: 30%; margin-right: 350px"
+              src="https://www.vcubesoftsolutions.com/wp-content/uploads/2021/11/e5e0b3f7-b9fb-4223-97e7-10249e3615de-1.jpg"
+              alt=""
+            />
+            <ul
+              style="
+                color: #fff;
+                margin: 140px 0px 0px 250px;
+                list-style-type: none;
+              "
+            >
+              <li>Live classes</li>
+              <br />
+              <li>24/7 Access</li>
+              <br />
+              <li>Every projects</li>
+              <br />
+              <li>One on one mentorship</li>
+              <br />
+              <li>Guest lectures</li>
+            </ul>
+          </div>
+          <div class="flex-container">
+              <h1 class="ro" style="margin: 20px 50px 0px 350px; color:antiquewhite;">
+                The Best Place to Develop Your Career In V CUBE
+                <br />&emsp;&emsp;&emsp;&emsp;&emsp; Software Solutions Pvt.Ltd
+              </h1>
+              <div class="flex-box">
+                <h2 style="width: 150%; margin-left:10px; color:#c0c0c0">Price that is reasonable</h2>
+                <p style="font-size: 20px; width:120%;">
+                  At a fair price, you can get the greatest learning experience
+                  and the best knowledge-based career foundation.
+                </p>
+              </div>
+              <div class="flex-box">
+                <h2 style="color:#c0c0c0">Classroom Training</h2>
+                <p style="font-size: 20px; width:120%;">
+                  Comprehensive instructor-led training with opportunities to
+                  engage with the teacher, peers, and coworkers in person and
+                  discuss ideas.
+                </p>
+              </div>
+              <div class="flex-box">
+                <h2 style="color:#c0c0c0;">Corporate training</h2>
+                <p style="font-size: 20px; width:120%;">
+                  Corporate training is an excellent way to close the skills gap
+                  and develop a highly competent and productive staff.
+                </p>
+              </div>
+              <div class="flex-box">
+                <h2 style="color:#c0c0c0;">Online Training</h2>
+                <p style="font-size: 20px; width:120%;">
+                  Online Training With our online-based blended training strategy,
+                  you’ll gain know-ledge and real world skills in the
+                  technologies.
+                </p>
+              </div>
+              <div class="flex-box">
+                <h2 style="color:#c0c0c0;">100% Placement</h2>
+                <p style="font-size: 20px; width:120%;">
+                  Get the best job placement aid from our seasoned professionals
+                  who will assist you in attaining your career objectives.
+                </p>
+              </div>
+              <div class="flex-box">
+                <h2 style="color:#c0c0c0;">Projects on daily basis</h2>
+                <p style="font-size: 20px; width:120%;">
+                  Daily projects will help you improve your abilities by allowing
+                  you to try things on your own and learn from your failures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figure class="snip1533">
+          <figcaption>
+            <blockquote>
+              <p>V CUBE is one of the best software training institutes in Hyderabad… I feel very comfortable with my trainer, he is very
+              friendly and he explain the topics very clearly. Per batch Limited ppl so we can communicate with trainer easy, I’m
+              referring my friends.</p>
+            </blockquote>
+            <h3>Sai Yadav <br><br> Student</h3>
+          </figcaption>
+        </figure>
+        <figure class="snip1533">
+          <figcaption>
+            <blockquote>
+              <p>Highly recommend this and one of the best institute for IT aspirants. Trainers are well professional and very
+              experienced, given the best trainings, conducted video mock interviews and I finally got placed in a big MNC with the
+              help of V CUBE. <br><br> </p>
+            </blockquote>
+            <h3>Dharma Reddy <br><br> Student</h3>
+          </figcaption>
+        </figure>
+        <figure class="snip1533">
+          <figcaption>
+            <blockquote>
+              <p>V CUBE is an amazing place to learn python fullstack from srinivas sir. Here we will be taught as a batch wise and they
+              are of 9 to 10 members so that we can discuss our doubts with trainer easily. <br><br><br><br> </p>
+            </blockquote>
+            <h3>K. Shabari <br><br> Student</h3>
+          </figcaption>
+        </figure>
+    </header>
+    <!-- JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--Owl Slider-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+</html>

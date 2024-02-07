@@ -1,0 +1,83 @@
+/*
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Central Gothic;
+}
+
+header{
+    background-color: white;
+    height: 120px;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+ul li{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 20;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: green;
+    color: #000;
+}
+
+ul li.active a{
+    background-color: yellow;
+    color: #000;
+    border-radius: 125px ;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.enroll{
+    height: 80%;
+    background-color: #ADD8E6;
+}
+
+.form-data{
+    border-radius: 15px;
+    margin-left: 1000px;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+.enroll input{
+    margin-left: 110px;
+}
+*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.main{
+    max-width: 50vh;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url("{% static 'media/office.jpg' %}");
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    background-color: aliceblue;
+}

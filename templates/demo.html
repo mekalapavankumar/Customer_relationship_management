@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo page</title>
+  <style>
+    * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar{
+            width: 1400px;
+            height: 85px;
+            margin: auto;
+        }
+        .icon{
+            width: 300px;
+            float: left;
+            height: 90px;
+        }
+
+        .logo{
+            color: aliceblue;
+            font-size: 35px;
+            font-family: Arial;
+            float: left;
+            padding-top: 30px;
+        }
+
+        .menu{
+            width:  400px;
+            float: left;
+            height: 70px;
+        }
+
+        ul{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul li{
+            list-style: none;
+            margin-left: 52px;
+            margin-top: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover{
+            color: aqua;
+        }
+
+        .search{
+            width: 700px;
+            margin-left: 100%;
+            margin-top: 80px;
+        }
+
+        .srch{
+            font-family:'Times New Roman', Times, serif;
+            width: 220px;
+            height: 40px;
+            background:transparent;
+            border: 1px solid rgb(218, 20, 20);
+            color: white;
+            border-right: none;
+            font-size: 30px;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            padding-left: none;
+            margin-left: 50px;
+            margin-right: none;
+            margin-top: 10px;
+        }
+
+        .btn{
+            width: 100px;
+            height: 30px;
+            background: aqua;
+            border: 2px solid aqua;
+            color: #fff;
+            font-size: 15px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .btn:focus{
+            outline: none;
+        }
+
+        .srch:focus{
+            outline: none;
+        }
+  </style>
+</head>
+<body>
+  <header class="main">
+    <div class="navbar">
+      <div class="icon">
+        <img  class="logo" src="{% static 'media/V-CUBE-Logo.jpg' %}" alt="">
+      </div>
+      <div class="menu">
+        <ul>
+            <li><a href="{% url 'crmhome' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'course' %}">Courses</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'demo' %}">Demo</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+        <div class="search">
+            <input type="search" class="srch" name="" placeholder="Type to Text">
+            <a href=""> <button class="btn">Search</button></a>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+</html>

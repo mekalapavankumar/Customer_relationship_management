@@ -1,0 +1,326 @@
+<!--<img src="https://free4kwallpapers.com/uploads/originals/2015/10/11/well-furnished-office-wallpaper.jpg" alt="">-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Page</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .nav {
+            width: 1400px;
+            height: 85px;
+            margin: auto;
+        }
+
+        .icon {
+            width: 300px;
+            float: left;
+            height: 90px;
+        }
+
+        .logo {
+            color: aliceblue;
+            font-size: 35px;
+            font-family: Arial;
+            float: left;
+            padding-top: 20px;
+            margin-left: 60px;
+        }
+
+        .menu {
+            width: 400px;
+            float: left;
+            height: 70px;
+        }
+
+        .menu ul{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 200px;
+        }
+
+        .menu ul li {
+            list-style: none;
+            margin-left: 92px;
+            margin-top: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: green;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        .menu ul li a:hover {
+            color: aqua;
+        }
+
+        /*
+        .search {
+            width: 700px;
+            margin-left: 100%;
+            margin-top: 80px;
+            cursor: pointer;
+        }
+
+        .srch {
+            font-family:'Times New Roman', Times, serif;
+            width: 220px;
+            height: 40px;
+            background:transparent;
+            border: 1px solid rgb(172, 34, 34);
+            color: white;
+            border-right: none;
+            font-size: 30px;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            padding-left: none;
+            margin-left: 50px;
+            margin-right: none;
+            margin-top: 10px;
+        }
+        .btn{
+            width: 100px;
+            height: 30px;
+            background: aqua;
+            border: 2px solid aqua;
+            color: #fff;
+            font-size: 15px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .srch:focus {
+            outline: none;
+        }
+        */
+        .about-section {
+            height: 200%;
+            width: 400%;
+            background-image: url("{% static 'media/navbar.jpg' %}");
+            background-size: cover;
+            margin-left: -400px;
+            margin-top: -180px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .about-section h1{
+            margin-top: 20%;
+            color: #fff;
+            text-align: center;
+            font-size: 40px;
+        }
+        .about-section p{
+            color:#fff;
+            text-align: center;
+            font-size: 100;
+            margin-top: 10px;
+        }
+        .paragraph{
+            position: absolute;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 300px 300px 0px 50%;/* margin-top margin-right margin-bottom margin-left */
+            font-size: 100%;
+        }
+        .paragraph img{
+            float: right;
+            margin: 20px 0px 15px 0px;/* margin-top margin-right margin-bottom margin-left */
+        }
+        .paragraph p{
+            height: 100%;
+            width: 160%;
+            line-height: 1.8;
+            margin-left: -50px;
+        }
+        .image-information{
+            position: absolute;
+            margin: 680px 0px 20px 200px;/* margin-top margin-right margin-bottom margin-left */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .service{
+            position: absolute;
+            margin: 1050px 0px 20px 200px;/* margin-top margin-right margin-bottom margin-left */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 1%;
+            width: 80%;
+        }
+        .service img{
+            float: left;
+            margin: 20px 40px 15px 10px;/* margin-top margin-right margin-bottom margin-left */
+        }
+        .service p{
+            position: absolute;
+            font-size: 100%;
+            margin: 10px 10px 15px 400px;/* margin-top margin-right margin-bottom margin-left */
+            height: 400px;
+            width: 400px;
+            font-size:120%;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.8;
+        }
+        .service ol {
+            counter-reset: list;
+            margin:320px 0px 0px -20px;/* margin-top margin-right margin-bottom margin-left */
+        }
+        .service ol > li {
+            list-style: none;
+        }
+        .service ol > li:before {
+            content: "("counter(list)")";
+            counter-increment: list;
+        }
+        .mission{
+            position: absolute;
+            margin: 1550px 0px 0px 200px;/* margin-top margin-right margin-bottom margin-left */
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .mission h2{
+            float: left;
+            margin: 23px 0px 0px 0px ;/* margin-top margin-right margin-bottom margin-left */
+        }
+        .mission p{
+            height: 100%;
+            width: 50%;
+            margin: 23px 0px 0px 400px;/* margin-top margin-right margin-bottom margin-left */
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.8;
+        }
+        .vision {
+            position:absolute;
+            margin: 1700px 0px 0px 200px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .vision h2{
+            float: left;
+            margin: 0px 0px 0px 0px;/* margin-top margin-right margin-bottom margin-left */
+            font-weight: 800;
+        }
+        .vision p{
+            height: 100%;
+            width: 50%;
+            margin: 0px 0px 0px 400px;
+        }
+        .quotation{
+            position: absolute;
+            margin: 1900px 0px 0px 0px;
+            text-align: center;
+            height: 80%;
+            width: 80%;
+        }
+        .quotation span{
+            content: "\201C";
+            font-size: 800%;
+        }
+        .form{
+            height: 480px;
+            top: -20px;
+            left: 770px;
+            border-radius: 10px;
+            text-align: center;
+            position: absolute;
+            margin: 2400px 0px 0px 100px;/* margin-top margin-right margin-bottom margin-left */
+        }
+        .form input{
+            height: 35px;
+            width: 250px;
+            font-family: Arial;
+            font-size: 120%;
+        }
+        .below-section{
+            position: absolute;
+            height: 10px;
+        }
+        .below-section img{
+            margin: 2700px 0px 0px 100px;/* margin-top margin-right margin-bottom margin-left */
+        }
+        .row{
+            font-size: 100;
+            min-width: 1000px;
+        }
+        .row p{
+            margin: 20px 0px 0px -200px;
+            line-height: 1.8;
+            font-size: 20px;
+            width: 500px;
+            float: left;
+        }
+        .row img{
+            margin: 50px 0px 0px 0px;
+            width: 50%;
+            height: 50%;
+        }
+        .choose{
+            min-width: 200px;
+        }
+        .choose h1{
+            margin: 20% 0px 0px -200px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="">
+        <div class="nav">
+            <div class="icon">
+                <a href="{% url 'crmhome' %}"><img class="logo" src="{% static 'media/V-CUBE-Logo.jpg' %}" alt="" /></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'crmhome' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'course' %}">Courses</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                </ul>
+                <!--
+                    <div class="search">
+                        <input type="search" class="srch" name="" placeholder="Type to Text">
+                        <a href="">
+                            <button class="btn">Search</button>
+                        </a>
+                    </div>
+                -->
+                <div class="about-section">
+                    <h1>About Us</h1><br> <br>
+                    <p>ANYTHING CAN BE LEARNED ONLINE, OFFLINE AND IN CORPORATE TRAININGS</p>
+                </div>
+                <div class="row">
+                    <p> <b> V CUBE SOFTWARE SOLUTIONS PVT.LTD </b>, is an institute that caters to the needs of students, businessmen and freelancers
+                    wanting to learn, improve, explore and soar in their careers. Our corporate office is located in Kukatpally, Hyderabad,
+                    India and our training centres are in Kukatpally and Ameerpet, Hyderabad, India. V CUBE Software Solutions Pvt.Ltd
+                    offers online information technology courses, online computer programming classes, and starting information technology
+                    courses. Take advantage of both online and offline resources.</p>
+                    <img src="{% static 'media/office.jpg' %}" alt="">
+                </div>
+                <div class="choose">
+                    <h1 style="font-family:Arial;">Why you choose us</h1>
+                    <i class="fa-solid fa-laptop-code" style="font-size:50px;color:yellow; margin: 20px 0px 0px -200px;"></i>
+                    <h4 style="margin: -30px 0px 0px -100px; width:600px; font-weight:bold; font-family:Arial, Helvetica, sans-serif;">LEARN ANYTHING ONLINE, OFFLINE AND CORPORATE TRAININGS</h4>
+                </div>
+            </div>
+    </section>
+</body>
+</html>

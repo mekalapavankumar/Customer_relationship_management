@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+        }
+        body{
+            font-family:'Roboto',sans-serif;
+        }
+        *{
+            margin: 0%;
+            padding: 0%;
+            list-style:none;
+            text-decoration: none;
+        }
+        .sidebar{
+            position: fixed;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: #042331;
+        }
+        .sidebar header{
+            font-size: 22px;
+            color: white;
+            text-align: center;
+            line-height: 70px;
+            background: #063146;
+            user-select: none;
+        }
+        .sidebar ul a{
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 65px;
+            color: white;
+            padding-left: 40px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            border-bottom: 1px solid black;
+            transition: .4s;
+        }
+        ul li:hover a{
+            padding-left: 50px;
+        }
+        .sidebar ul a i{
+            margin-right: 16px;
+        }
+        #check{
+            display: none;
+        }
+        label #btn,label #cancel{
+            position: absolute;
+            cursor: pointer ;
+            background: #042331;
+            border-radius: 3px;
+        }
+        label #cancel{
+            z-index: 1111;
+            left: -195px;
+            top: 19px;
+            font-size: 30px;
+            color: #0a5275;
+            padding: 4px 9px;
+            transition: all .5s ease;
+        }
+        #check:checked ~ .sidebar{
+            left: 0;
+        }
+        #check:checked ~ label #btn{
+            left: 250px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        #check:checked ~ label #cancel{
+            left: 200px;
+        }
+    </style>
+    <title>Main Interface</title>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa fa-bars" id="btn" style="font-size:38px; left: 40px; top: 16px; color: red; padding: 2px 10px; transition: all .5s"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>
+            Admin Interface
+        </header>
+        <ul>
+            <li> <a href="{% url 'student' %}"> <i class="fa fa-qrcode">Home</i></a></li>
+            <li><a href="{% url 'student' %}"><i class="fas fa-user-alt">Demo</i></a></li>
+            <li><a href="{% url 'student' %}"><i class="fa fa-trash">Removed_Data</i></a></li>
+            <li><a href="{% url 'student' %}"><i class="fa fa-sign-out">Logout</i></a></li>
+        </ul>
+    </div>
+</body>
+</html>
